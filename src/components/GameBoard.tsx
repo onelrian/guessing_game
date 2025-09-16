@@ -78,7 +78,7 @@ const GameBoard: React.FC = () => {
           <select
             value={difficulty}
             onChange={(e) => setDifficulty(e.target.value as 'easy' | 'medium' | 'hard')}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 bg-white"
             disabled={gameState.gameStatus === 'playing' && gameState.attempts > 0}
           >
             <option value="easy">Easy (1-50, 10 attempts)</option>
@@ -93,7 +93,7 @@ const GameBoard: React.FC = () => {
           <p className="text-lg text-gray-700">{gameState.feedback}</p>
         </div>
 
-        <div className="flex justify-between text-sm text-gray-600 mb-4">
+        <div className="flex justify-between text-sm text-gray-800 font-medium mb-4">
           <span>Attempts: {gameState.attempts}/{gameState.maxAttempts}</span>
           <span>Range: {gameState.range.min}-{gameState.range.max}</span>
         </div>
@@ -108,7 +108,7 @@ const GameBoard: React.FC = () => {
               placeholder="Enter your guess"
               min={gameState.range.min}
               max={gameState.range.max}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 bg-white"
             />
             <button
               onClick={handleGuess}

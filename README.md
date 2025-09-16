@@ -23,7 +23,7 @@ A professional, interactive number guessing game built with Next.js, TypeScript,
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/onelrian/guessing_game.git
 cd guessing_game
 ```
 

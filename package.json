@@ -33,6 +33,14 @@
     "react",
     "game"
   ],
-  "author": "Your Name",
-  "license": "MIT"
+  "author": "onelrian",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onelrian/guessing_game.git"
+  },
+  "homepage": "https://github.com/onelrian/guessing_game#readme",
+  "bugs": {
+    "url": "https://github.com/onelrian/guessing_game/issues"
+  }
 }
